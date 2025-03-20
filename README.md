@@ -46,7 +46,7 @@ Batch normalization stabilizes training, leading to faster convergence compared 
 - **Stability**: Larger batch sizes show **smoother loss curves** compared to smaller ones.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/05a82609-6e3a-4863-a9f0-85d826543668" alt="Batch Normalization" width="500"/>
+  <img src="https://github.com/user-attachments/assets/05a82609-6e3a-4863-a9f0-85d826543668" alt="Batch Size Effect" width="500"/>
 </p>
 
 ### Evaluating MLP Performance  
@@ -88,13 +88,13 @@ _Code implementation: `main.py`_
 - Without batch normalization: **Vanishing gradients** in the early layers.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/f9ae681b-96ea-441d-8dd8-775fbe09811c" alt="Width vs Accuracy" width="500"/>
+  <img src="https://github.com/user-attachments/assets/f9ae681b-96ea-441d-8dd8-775fbe09811c" alt="Gradient vs Epoch" width="500"/>
 </p>
 
 - With batch normalization: **Gradients explode**, requiring careful tuning.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/40b863ad-787b-4b29-91ea-f2d2f0945382" alt="Width vs Accuracy" width="500"/>
+  <img src="https://github.com/user-attachments/assets/40b863ad-787b-4b29-91ea-f2d2f0945382" alt="Gradient vs Epoch with BatchNorm" width="500"/>
 </p>
 
 #### Implicit Representation
@@ -107,7 +107,7 @@ Transforming input coordinates using **sine and cosine functions** improves deci
 </p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/37526961-0607-452a-8709-6afd1d745644" alt="Width vs Accuracy" width="500"/>
+  <img src="https://github.com/user-attachments/assets/37526961-0607-452a-8709-6afd1d745644" alt="Decision Boundaries" width="500"/>
 </p>
 
 ---
@@ -160,7 +160,7 @@ Five images correctly classified by the **Fine-tuned model** but misclassified b
 </p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/771f320b-4d91-4d1a-807c-5e68dfde8f35" alt="Correctly Classified Samples" width="500"/>
+  <img src="https://github.com/user-attachments/assets/771f320b-4d91-4d1a-807c-5e68dfde8f35" width="500"/>
 </p>
 
 ---
