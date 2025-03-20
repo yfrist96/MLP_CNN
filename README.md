@@ -100,7 +100,15 @@ _Code implementation: `main.py`_
 #### Implicit Representation
 Transforming input coordinates using **sine and cosine functions** improves decision boundaries, allowing the model to learn more complex patterns.
 
+<p align="center">
+  <img alt="Light" src="https://github.com/user-attachments/assets/c48859d0-0978-452f-8f75-8d8ab0fc5500" width="45%">
+&nbsp; &nbsp; &nbsp; &nbsp;
+  <img alt="Dark" src="https://github.com/user-attachments/assets/9ffa6017-fa1f-4b30-acc3-af1958bb93ae" width="45%">
+</p>
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/37526961-0607-452a-8709-6afd1d745644" alt="Width vs Accuracy" width="500"/>
+</p>
 
 ---
 
