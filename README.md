@@ -53,14 +53,27 @@ Batch normalization stabilizes training, leading to faster convergence compared 
 _Code implementation: `main.py`_
 
 - **Best model:** Achieved **validation accuracy ≈ 0.75**, with training, validation, and test losses stabilizing around **0.25**.
+
+<p align="center">
+  <img alt="Light" src="https://github.com/user-attachments/assets/bb060533-db8f-492b-a617-07506ae994c0" width="45%">
+&nbsp; &nbsp; &nbsp; &nbsp;
+  <img alt="Dark" src="https://github.com/user-attachments/assets/1d846194-49e8-49b8-9c25-b1b30be0f142" width="45%">
+</p>
+
 - **Worst model:** Showed validation accuracy **≈ 0.50**, with higher loss convergence (**≈ 1.0**).
+
+<p align="center">
+  <img alt="Light" src="https://github.com/user-attachments/assets/380156a6-c3bf-4754-88bf-4b704996de17" width="45%">
+&nbsp; &nbsp; &nbsp; &nbsp;
+  <img alt="Dark" src="https://github.com/user-attachments/assets/20d2207b-c43c-4ee1-a1eb-fc368a9b6a59" width="45%">
+</p>
 
 #### Depth vs. Accuracy
 - **Optimal depth:** **2 hidden layers**
 - More layers lead to **diminishing returns** due to the **vanishing gradient problem**.
 
 <p align="center">
-  <img src="path/to/depth_vs_accuracy.png" alt="Depth vs Accuracy" width="500"/>
+  <img src="https://github.com/user-attachments/assets/b49e8f66-88f8-40f0-b9a2-74ef0b959fc1" alt="Depth vs Accuracy" width="500"/>
 </p>
 
 #### Width vs. Accuracy
@@ -68,15 +81,26 @@ _Code implementation: `main.py`_
 - Too few or too many neurons reduce accuracy.
 
 <p align="center">
-  <img src="path/to/width_vs_accuracy.png" alt="Width vs Accuracy" width="500"/>
+  <img src="https://github.com/user-attachments/assets/b5ab32ee-e76a-476f-b803-ce928a994fe9" alt="Width vs Accuracy" width="500"/>
 </p>
 
 #### Monitoring Gradients
 - Without batch normalization: **Vanishing gradients** in the early layers.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f9ae681b-96ea-441d-8dd8-775fbe09811c" alt="Width vs Accuracy" width="500"/>
+</p>
+
 - With batch normalization: **Gradients explode**, requiring careful tuning.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/40b863ad-787b-4b29-91ea-f2d2f0945382" alt="Width vs Accuracy" width="500"/>
+</p>
 
 #### Implicit Representation
 Transforming input coordinates using **sine and cosine functions** improves decision boundaries, allowing the model to learn more complex patterns.
+
+
 
 ---
 
