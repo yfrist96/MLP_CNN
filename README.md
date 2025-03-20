@@ -52,6 +52,8 @@ Batch normalization stabilizes training, leading to faster convergence compared 
 ### Evaluating MLP Performance  
 _Code implementation: `main.py`_
 
+In this part of the project, I trained 8 classifiers for the following depths and widths {(1,16), (2, 16), (6, 16), (10, 16), (6, 8), (6, 32), (6, 64)} and optimized each model by tweaking the parameters.
+
 - **Best model:** Achieved **validation accuracy ≈ 0.75**, with training, validation, and test losses stabilizing around **0.25**.
 
 <p align="center">
@@ -98,6 +100,8 @@ _Code implementation: `main.py`_
 </p>
 
 #### Implicit Representation
+When applying deep learning on some low dimensional data with a sequential pattern (e.g. time, location, etc.) it is common to first create an implicit representation of the data. This simply means passing the data through a series of sines and cosines. Sines and cosines are functions which may take a NN several layers to implement by itself, but are very useful. By doing this process ourselves we can leave the network to focus on more complex patterns which we can’t recognize and wish it to learn by itself.
+I implemented an implicit representation pre-processing to the data, passing the input through 10 sine functions and trained an NN with 6 and width 16 on top of these representations.
 Transforming input coordinates using **sine and cosine functions** improves decision boundaries, allowing the model to learn more complex patterns.
 
 <p align="center">
