@@ -23,27 +23,31 @@ _Code implementation: `NN_tutorial.py`_
 A high learning rate can lead to **oscillations in loss**, making training unstable. Conversely, a lower learning rate ensures **more stable learning**. The figure below demonstrates these effects:
 
 <p align="center">
-  <img src="path/to/learning_rate_plot.png" alt="Learning Rate Effects" width="500"/>
+  <img src="https://github.com/user-attachments/assets/b8678682-be5e-4385-abb5-5169a5f19325" alt="Learning Rate Effects" width="500"/>
 </p>
 
 #### Epochs
 Too few epochs prevent the model from learning patterns effectively, leading to high losses. Too many epochs cause **overfitting**, observed around the **80-epoch mark**.
 
 <p align="center">
-  <img src="path/to/epochs_plot.png" alt="Epochs Effect" width="500"/>
+  <img src="https://github.com/user-attachments/assets/d28e0919-9a3f-426b-8c71-c9ad2011d8bc" alt="Epochs Effect" width="500"/>
 </p>
 
 #### Batch Normalization
 Batch normalization stabilizes training, leading to faster convergence compared to models without it.
 
 <p align="center">
-  <img src="path/to/batch_norm_plot.png" alt="Batch Normalization" width="500"/>
+  <img src="https://github.com/user-attachments/assets/7041ce4d-e983-4346-bcad-267e8ac8cf3c" alt="Batch Normalization" width="500"/>
 </p>
 
 #### Batch Size
 - **Larger batch sizes** achieve **higher test accuracy**.
 - **Smaller batch sizes** result in **slower training speeds per epoch**.
 - **Stability**: Larger batch sizes show **smoother loss curves** compared to smaller ones.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/05a82609-6e3a-4863-a9f0-85d826543668" alt="Batch Normalization" width="500"/>
+</p>
 
 ### Evaluating MLP Performance  
 _Code implementation: `main.py`_
