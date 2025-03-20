@@ -148,7 +148,19 @@ Using CNNs, I tackled **binary classification** to distinguish real human faces 
 Five images correctly classified by the **Fine-tuned model** but misclassified by the **Training from scratch model**:
 
 <p align="center">
-  <img src="path/to/correctly_classified_samples.png" alt="Correctly Classified Samples" width="500"/>
+  <img alt="Light" src="https://github.com/user-attachments/assets/a176fafc-4c5e-402b-9a44-95475813a708" width="45%">
+&nbsp; &nbsp; &nbsp; &nbsp;
+  <img alt="Dark" src="https://github.com/user-attachments/assets/6d431eea-df77-415b-8331-b6e300c04b15" width="45%">
+</p>
+
+<p align="center">
+  <img alt="Light" src="https://github.com/user-attachments/assets/0420a65d-6c69-4e3d-bca4-d493f955fab0" width="45%">
+&nbsp; &nbsp; &nbsp; &nbsp;
+  <img alt="Dark" src="https://github.com/user-attachments/assets/439252e7-ed50-46e5-9458-2f8a8e73c617" width="45%">
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/771f320b-4d91-4d1a-807c-5e68dfde8f35" alt="Correctly Classified Samples" width="500"/>
 </p>
 
 ---
