@@ -117,6 +117,7 @@ Transforming input coordinates using **sine and cosine functions** improves deci
 ---
 
 ## Convolutional Neural Networks (CNNs)
+_Code implementation: `cnn.py`_
 
 ### Task: Deepfake Image Classification
 Using CNNs, I tackled **binary classification** to distinguish real human faces from deepfake-generated images. The dataset is available [here](https://drive.google.com/file/d/1KBT7gpeo2fDj8-J_pc3dFWu4LLEDwKKp/view).
@@ -124,6 +125,7 @@ Using CNNs, I tackled **binary classification** to distinguish real human faces 
 ### Model Comparisons
 
 #### XGBoost (Baseline)
+_Code implementation: `xg.py`_
 - **Accuracy:** 73.5%
 
 #### Training from Scratch (ResNet18)
@@ -149,6 +151,7 @@ Using CNNs, I tackled **binary classification** to distinguish real human faces 
 - **Worst model:** **Training from scratch** (Test accuracy = **52.25%**)
 
 ### Sample Analysis
+_Code implementation: `five_samples.py`_
 Five images correctly classified by the **Fine-tuned model** but misclassified by the **Training from scratch model**:
 
 <p align="center">
@@ -177,34 +180,7 @@ Five images correctly classified by the **Fine-tuned model** but misclassified b
 - **Fine-tuning a pretrained model significantly outperforms training from scratch**.
 - **Implicit representation techniques enhance MLPs' ability to capture complex patterns.**
 
-### Future Work
-- Further optimize CNN performance to exceed **97% test accuracy**.
-- Experiment with **attention-based architectures** such as Vision Transformers (ViTs) for image classification.
-- Extend MLP analysis to **higher-dimensional structured data.**
+**Full report can be found in the ML_Methods_Ex4_Report.pdf**
 
 ---
 
-## How to Run the Code
-
-### Setup
-Ensure you have the necessary dependencies:
-```bash
-pip install numpy pandas torch torchvision xgboost matplotlib
-```
-
-### Running MLP Experiments
-```bash
-python NN_tutorial.py
-python main.py
-```
-
-### Running CNN Experiments
-```bash
-python cnn.py
-```
-
----
-
-## Author
-**Your Name**  
-**GitHub:** [YourGitHubProfile](https://github.com/yourgithubprofile)
